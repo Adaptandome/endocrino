@@ -1,0 +1,34 @@
+extends layout
+
+block header
+  #cabecera
+    h1.cabecera1(data-numlineas='1')  Portal 
+
+
+block navegacion
+  #menu
+    ul
+        li 
+          a(href='http://localhost:8881/') Inicio
+        li 
+          a(href='http://localhost:8881/nutricion/') Nutrición Clínica
+        li Endocrinología
+
+block section
+
+    img(src='/images/principal4.jpg')
+    article
+      #contenedor_1 
+        #caja_1 
+          img(src='/images/cuadrado_2.jpg')
+        #caja_2
+          img(src='/images/cuadrado_3.jpg')
+        #caja_3
+          img(src='/images/cuadrado_4.jpg')
+          blockquote
+            p fuentes originales
+    
+
+block footer
+  #pie 
+    small Copyright ---

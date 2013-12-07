@@ -1,0 +1,40 @@
+extends layout
+
+block header
+  #cabecera
+    h1.cabecera1(data-numlineas='1')   
+      if (opcion)
+        p #{opcion} es una gran especialidad
+      else 
+        p Especialidad no seleccionada
+
+
+block navegacion
+  #menu
+    ul
+        li 
+          a(href='http://localhost:8881/') Inicio
+        li 
+          a(href='http://localhost:8881/nutricion/') Nutrición Clínica
+        li Endocrinología
+        
+block section
+  #seccion_principal
+    article autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina
+
+    article otro articulo sobre medicina endocrina
+
+
+    
+block aside
+  #barra_lateral
+          img(src='/images/cuadrado_2.jpg')
+ 
+          img(src='/images/cuadrado_3.jpg')
+ 
+          img(src='/images/cuadrado_4.jpg')
+   
+
+block footer
+  #pie 
+    small Copyright ---

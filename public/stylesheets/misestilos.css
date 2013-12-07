@@ -1,0 +1,109 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	font: bold 20px verdana, sans-serif;
+	color: #999999;
+}
+h2 {
+	font: bold 14px verdana, sans-serif;
+}
+p {
+	font-size: 20px;
+	text-align: justify;
+
+}
+
+header, section, footer, nav, article, figure, figcaption{
+	display: block;
+}
+body{
+	text-align: center;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+#caja_principal{
+	width: 100%;  /*Si se quiere ajustar al 100% del tamaño de la ventana*/
+	margin: 15px auto;
+	max-width: 1200px; /*Define el ancho total de todo el portal*/
+	text-align: left;
+}
+#seccion_principal{
+	float: left;
+	max-width: 800px;
+	margin: 15px auto;
+	background: #CCCCCC;
+}
+#seccion_principal2{
+	float: left;   /*Se cambia de float a left, para que esté alineado a la izquierda*/
+    max-width: 800px;
+	
+	margin: 15px auto;
+}
+#cabecera{
+	background: #219bd9;
+	border: 1px solid #999999;
+	padding: 20px;
+}
+.cabecera1{
+	background: #FFFFFF;
+	border: 1px solid #999999;
+	padding: 30px;
+}
+#menu{
+	background: #CCCCCC;
+	padding: 5px 15px;
+}
+#menu li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px verdana, sans-serif;
+}
+#pie_articulo p{
+	font: bold 14px verdana, sans-serif;
+}
+#barra_lateral{
+	float: right;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 20px;
+	background: #CCCCCC;
+}
+
+#pie{
+	clear: both;
+	text-align: left;
+	color: #999999;
+	padding: 20px;
+	border-top: 2px solid #999999;
+}
+
+  article {
+ 	background: #219bd9;
+ 	border: 1px solid #999999;
+ 	padding: 20px;
+ 	margin-bottom: 15px;
+ }
+
+ article footer {
+ 	text-align: right;
+ }
+
+#contenedor_1{
+	width: auto;
+	margin: 20px 0px;
+	background: #219bd9;
+}
+#caja_1{
+	flex: 1 ;
+}
+#caja_2{
+	flex: 1 ;
+}
+#caja_3{
+	flex: 1 ;
+}
