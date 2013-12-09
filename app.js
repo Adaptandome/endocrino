@@ -37,6 +37,6 @@ app.get('/?',function(req,res){
 	res.render('index');
 });
 
-var port = 8080;
+var port = process.env.PORT || 5000; /*En Heroku no se puede asignar un puerto fijo*/
 app.listen(port);
-console.log('listening onport ' + port);
+console.log('listening on port ' + port);
