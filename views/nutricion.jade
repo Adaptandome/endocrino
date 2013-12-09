@@ -10,13 +10,20 @@ block header
 
 
 block navegacion
-  #menu
-    ul
-        li 
-          a(href='http://localhost:8881/') Inicio
-        li 
-          a(href='http://localhost:8881/nutricion/') Nutrición Clínica
-        li Endocrinología
+  nav
+    ul      
+      li 
+        a(href='/') Inicio
+      li 
+        a(href='') Nutrición Clínica
+      li
+        a(href='/endocrinologia/general/') Endocrinología
+        #submenu
+          ul
+            li
+              a(href='/endocrinologia/preventiva') Preventiva
+            li 
+              a(href='/endocrinologia/especial') Especial
         
 block section
   #seccion_principal

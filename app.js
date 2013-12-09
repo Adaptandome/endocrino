@@ -7,14 +7,14 @@ app.set('view engine', 'jade');
 app.set('view options', {layout: true });
 app.set('views',__dirname + '/views');
 
-app.get('/nutricion/:name?', function(req, res, next){
+app.get('/endocrinologia/:name?', function(req, res, next){
 	var name = req.params.name;
 
 	switch (name ? name.toLowerCase() : ''){
+		case 'general' :
 		case 'preventiva' :
-		case 'curativa' :
 		case 'especial'   :
-			res.render('nutricion', {opcion:name});
+			res.render('endocrinologia', {opcion:name});
 
 			break;
 
@@ -25,8 +25,12 @@ app.get('/nutricion/:name?', function(req, res, next){
 	}
 });
 
-app.get('/nutricion/*?', function(req,res){
-	res.render('nutricion', {opcion: null});
+app.get('/endocrinologia/*?', function(req,res){
+	res.render('endocrinologia', {opcion: null});
+});
+
+app.get('/nutricion/?', function(req,res){
+	res.render('nutricion');
 });
 
 app.get('/?',function(req,res){

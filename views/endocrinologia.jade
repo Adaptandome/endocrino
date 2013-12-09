@@ -2,14 +2,18 @@ extends layout
 
 block header
   #cabecera
-    h1.cabecera1(data-numlineas='1')  Portal 
+    h1.cabecera1(data-numlineas='1')   
+      if (opcion)
+        p #{opcion} es una gran especialidad
+      else 
+        p Especialidad no seleccionada
 
 
 block navegacion
   nav
     ul      
       li 
-        a(href='') Inicio
+        a(href='/') Inicio
       li 
         a(href='/nutricion/') Nutrición Clínica
       li
@@ -20,22 +24,9 @@ block navegacion
               a(href='/endocrinologia/preventiva') Preventiva
             li 
               a(href='/endocrinologia/especial') Especial
+        
 
-
-block section
-
-    img(src='/images/principal4.jpg')
-    article
-      #contenedor_1 
-        #caja_1 
-          img(src='/images/cuadrado_2.jpg')
-        #caja_2
-          img(src='/images/cuadrado_3.jpg')
-        #caja_3
-          img(src='/images/cuadrado_4.jpg')
-          blockquote
-            p fuentes originales
-    
+   
 
 block footer
   #pie 
