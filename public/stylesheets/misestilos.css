@@ -263,7 +263,7 @@ article footer {
 
 
 #caja_1{
-	flex: 30%;
+	flex: 25%;
 	padding: 5px 15px;
 	color:#4e5319 ;
 	margin-left: 3%;
@@ -271,14 +271,14 @@ article footer {
 
 }
 #caja_2{
-	flex: 30%;
+	flex: 25%;
 	padding: 5px 5px;
 	color:#491463;
 	margin-left: 3%;
 
 }
 #caja_3{
-	flex: 40%;
+	flex: 50%;
 	padding: 5px 5px;
 	color:#961731;
 	/*border: 1px solid #999999;
