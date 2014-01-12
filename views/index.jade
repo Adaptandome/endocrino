@@ -1,9 +1,8 @@
 extends layout
 
-block header
-  #cabecera
-    h1.cabecera1(data-numlineas='1')  Portal 
-
+block header 
+  img(src='/images/Consulta_Montalban.jpg')
+  
 
 block navegacion
   nav
@@ -11,32 +10,45 @@ block navegacion
       li 
         a(href='') Inicio
       li 
-        a(href='/nutricion/') Nutrición Clínica
+        a(href='/endocrinologia') Endocrinología y Diabetes
       li
-        a(href='/endocrinologia/general') Endocrinología
-        #submenu
-          ul
-            li
-              a(href='/endocrinologia/preventiva') Preventiva
-            li 
-              a(href='/endocrinologia/especial') Especial
+        a(href='/nutricion') Nutrición y Obesidad
+      li
+        a(href='/clinica') Nuestra Clínica
 
 
 block section
+  img(src='/images/Endocrino_Montalban.jpg')
+  br
+  
+  #contenedor_1
+    #caja_1
+      br
+      #titulo1 Cita previa 
+      p Teléfono: 942049644 <br> Martes, Miércoles y Jueves <br> Tardes: 15:30 - 20:00
+      br
+    #caja_2
+      br
+      #titulo1  Dirección
+      p Calle Lealtad, 14 <br> 3ª planta, puerta 2 <br> 39002 Santander
+      br
+    #caja_3
+      #caja_mapa
+        img(src='/images/Mapa_Consulta_Santander.jpg')
 
-    img(src='/images/principal4.jpg')
-    article
-      #contenedor_1 
-        #caja_1 
-          img(src='/images/cuadrado_2.jpg')
-        #caja_2
-          img(src='/images/cuadrado_3.jpg')
-        #caja_3
-          img(src='/images/cuadrado_4.jpg')
-          blockquote
-            p fuentes originales
-    
+  #contenedor_2 
+    #caja_4
+      br
+      #titulo1
+        #color_berenjena ¿Cuándo acudir?
+          #margen
+          #font15 Si padece de diabetes, obesidad, osteoporosis, hipo/hipertiroidismo, hipercolesterolemia, alguna alteración nutricional, etc  y el tratamiento pautado no ha logrado un adecuado control de su enfermedad y /o requiere de la valoración de un especialista para descartar alteraciones hormonales adicionales.
+          #margen
+          #font15 Si sufre de una alteración hormonal diagnosticada por laboratorio o se sospecha de ella.
+          #margen
+          #font15 Si ha sido diagnosticado de  un tumor en alguna glándula o en otro órgano pero que produzca algún tipo de hormona.
 
 block footer
   #pie 
-    small Copyright ---
+    small Copyright 2014 Doctora Montalbán Carrasco
+    

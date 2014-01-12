@@ -9,7 +9,7 @@
     "node": "0.10.x",
     "npm": "1.2.x"
   },
-  "description": "Web endocrinologia",
+  "description": "Web endocrinologia Dra. Coral Montalbán",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
@@ -21,7 +21,8 @@
   },
   "keywords": [
     "endocrino",
-    "Montalban"
+    "Montalban",
+    "Santander"
   ],
 
   "author": "",

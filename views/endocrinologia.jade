@@ -1,12 +1,7 @@
 extends layout
 
 block header
-  #cabecera
-    h1.cabecera1(data-numlineas='1')   
-      if (opcion)
-        p #{opcion} es una gran especialidad
-      else 
-        p Especialidad no seleccionada
+  img(src='/images/Consulta_Montalban.jpg')
 
 
 block navegacion
@@ -15,19 +10,57 @@ block navegacion
       li 
         a(href='/') Inicio
       li 
-        a(href='/nutricion/') Nutrición Clínica
+        a(href='/endocrinologia') Endocrinología y Diabetes
       li
-        a(href='/endocrinologia/general') Endocrinología
-        #submenu
-          ul
-            li
-              a(href='/endocrinologia/preventiva') Preventiva
-            li 
-              a(href='/endocrinologia/especial') Especial
+        a(href='/nutricion') Nutrición y Obesidad
+      li
+        a(href='/clinica') Nuestra Clínica
         
+block section
+  #seccion_principal
+    article 
+      #titulo_endo Endocrinología 
+      #color_gris
+        p El sistema endocrino está representado por un conjunto de órganos y tejidos denominados glándulas, que liberan al torrente sanguíneo unas sustancias llamadas hormonas. Las hormonas secretadas por las glándulas regulan el crecimiento, el desarrollo y las funciones de muchos tejidos y coordinan los procesos metabólicos del organismo.
+      br
+      
+      #caja_endo 
+        #caja_7 
+          #bullets 
+            ul
+              li Enfermedades del tiroides: hipo e hipertiroidismo. Bocio. Cáncer de tiroides. 
+              li Trastornos del metabolismo del calcio. Hiperpartiroidismo. Osteoporosis. 
+              li Trastornos hipofisarios. Prolactinoma. Acromegalia. Alteraciones del crecimiento. Baja talla infantil. 
+              li Hirsutismo. 
+              li Trastornos suprarrenales: síndrome de Cushing. Enfermedad de Addison. 
+              li Dislipemias: alteraciones del colesterol y triglicéridos.
 
-   
+        #caja_8 
+          img(src='/images/endocrinologia1_66.jpg')
+
+
+    article 
+      br
+      #titulo_endo Diabetes 
+      #color_gris
+        p La diabetes mellitus es una enfermedad producida por una alteración del metabolismo de los hidratos de carbono, que se caracteriza por una cantidad excesiva de glucosa en sangre y en orina. Es una enfermedad multiorgánica y que en muchas ocasiones no produce síntomas. A largo plazo puede provocar daños en la vista, riñón, corazón, extremidades y vasos sanguíneos de cualquier territorio corporal. Estas lesiones pueden paliarse con un diagnóstico precoz y un abordaje terapéutico personalizado.
+      br
+      
+      #caja_endo 
+        #caja_7
+          #bullets
+            ul 
+              li Diabetes mellitus tipo 1. 
+              li Diabetes mellitus tipo 2. 
+              li Diabetes gestacional. <br Diabetes en el anciano 
+              li Diabetes esteroidea y asociada a otras enfermedades. 
+              li Diagnóstico integral. 
+              li Tratamiento médico y nutricional. 
+              li Tratamiento de las comorbilidades asociados. 
+
+        #caja_8
+          img(src='/images/control_diabetes_66.jpg')
 
 block footer
   #pie 
-    small Copyright ---
+    small Copyright 2014 Doctora Montalbán Carrasco

@@ -6,13 +6,69 @@ h1 {
 	font: bold 20px verdana, sans-serif;
 	color: #999999;
 }
-h2 {
-	font: bold 14px verdana, sans-serif;
-}
+
 p {
-	font-size: 20px;
+	font-size: 18px verdana;
 	text-align: justify;
 
+}
+#separador {
+	height: 10px;
+	background: #e5e8cc;
+}
+#titulo1{
+	font: 15px Verdana, sans-serif;
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+#titulo1 p{
+	color:#4e5319 ;
+}
+#titulo2 {
+	font: 15px Verdana, sans-serif;
+	color:#961731;
+	text-align: right;
+	margin-right: 15px;
+}
+
+#titulo_endo{
+	font: 15px Verdana, sans-serif;
+	font-weight:bold;
+	margin-bottom: 5px;
+	color:#491463;
+	
+}
+#titulo_nutri{
+	font: 15px Verdana, sans-serif;
+	font-weight:bold;
+	margin-bottom: 5px;
+	color:#4e5319 ;
+
+}
+#titulo_clinic{
+	font: 15px Verdana, sans-serif;
+	font-weight:bold;
+	margin-bottom: 5px;
+	color:#961731; 
+}
+
+#color_gris{
+	color: #333333;
+	text-align: justify;
+}
+#color_berenjena{
+	color:#491463;
+	text-align: justify;
+
+
+}
+#font15{
+	font: 15px Verdana, sans-serif;
+	
+
+}
+#margen{
+	margin-bottom: 5px;
 }
 
 header, section, footer, nav, article, figure, figcaption{
@@ -20,37 +76,51 @@ header, section, footer, nav, article, figure, figcaption{
 }
 body{
 	text-align: center;
+	background: #FFFFFF;/*#bdb8b8; #f9f1fd; azul claro #219bd9*/
 }
 img{
 	max-width: 100%;
 	height: auto;
+	margin-bottom: -4px;
 }
+#igualatorio{
+    border-radius: 8px;	
+}
+
+
 #caja_principal{
 	width: 100%;  /*Si se quiere ajustar al 100% del tamaño de la ventana*/
-	margin: 15px auto;
-	max-width: 1200px; /*Define el ancho total de todo el portal*/
+	margin: 0px auto;
+	max-width: 800px; /*Define el ancho total de todo el portal*/
 	text-align: left;
+	background: #fcffe0; /* #fdffb9;*/
 }
 #seccion_principal{
-	float: left;
-	max-width: 800px;
+	float: center;
+	max-width: 760px;
 	margin: 15px auto;
 	background: #CCCCCC;
 }
-#seccion_principal2{
-	float: left;   /*Se cambia de float a left, para que esté alineado a la izquierda*/
-    max-width: 800px;	
-	margin: 15px auto;
-}
+
 #cabecera{
 	background: #219bd9;
-	border: 1px solid #999999;
-	padding: 20px;
+	border: 3px solid #999999;
+	padding: 5px;
 }
 .cabecera1{
 	background: #FFFFFF;
 	border: 1px solid #999999;
 	padding: 30px;
+}
+
+#bullets ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#bullets ul li{
+	padding-bottom: 4px;
 }
 
 nav{
@@ -59,13 +129,13 @@ nav{
 	/*margin: 0 auto 20px;*/
     /*border: 1px solid #222;*/
     position: relative;
-    background: #CCCCCC;
-    font: 16px Tahoma; sans-serif;
+    background: #c1c291;
+    font: 14px Verdana, sans-serif;
     /*display: inline-block;*/
 }
 nav ul{
-
-    font: 16px Tahoma; sans-serif;
+    /*El siguiente font sin efecto en esta barra*/
+    font: 14px Verdana, sans-serif;
     /*float:left;/*Este float hace que se encuadre el menu al tamaño de los enlaces*/
     text-align:left;
     margin-right:10px;
@@ -88,29 +158,31 @@ nav ul li ul{
 nav ul li{ 
 	display: inline-block;
 	/*list-style: none;*/
-	font: bold 16px verdana, sans-serif;
+	padding: 0px 5px;
+	font: 15px Verdana, sans-serif;
+	font-weight:bold;
 }
 
 /*Configurado como se mostrará cada uno de los elementos del menu principal */
 nav ul li a {
    display: block;
-   padding: 0px 10px;
+   padding: 3px 10px;
    /* margin-right:0px; Añadimos margen a la derecha, además del padding de 10 que tiene en horizontal por los dos lados */
    /*margin-left:10px;*/
-   border: 1px solid #999999;
-   border-radius: 4px;
-   
-   background: #CCCCFF;
+   /*border: 1px solid #999999;
+   border-radius: 4px;   
+   background: #491463;*/
    /*border-left: 1px solid #999;*/
    /*background: #CCCCCC;*/
-   color: #000;
+   color: #491463;
    text-decoration: none;
 }
 
 /*Configurado para dar efecto al pasar por cada elemento del menu principal
   También permite mantener el efecto en submenús*/
 nav ul li a:hover {
-   background-color: #FBE080; 
+    /*background-color: #FBE080; */
+    color:#a01b5a;
 }
 /*Configurado para dar efecto al pasar por un elemento con submenu. En realidad lo 
 que consigue es cambiar la propiedad:none del nav ul ul*/
@@ -128,6 +200,7 @@ nav ul ul li{
 nav ul ul li a:hover {
    background-color: #F0EB80; 
 }
+/*Utilizado para que tome efecto jade y muestre los submenus*/
 #submenu{
 
 }
@@ -149,6 +222,7 @@ nav ul ul li a:hover {
 #pie_articulo p{
 	font: bold 14px verdana, sans-serif;
 }
+
 #barra_lateral{
 	float: right;
 	width: 220px;
@@ -160,33 +234,127 @@ nav ul ul li a:hover {
 #pie{
 	clear: both;
 	text-align: left;
-	color: #999999;
+	color: #999999; /*texto*/
 	padding: 20px;
 	border-top: 2px solid #999999;
 }
 
 article {
- 	background: #219bd9;
- 	border: 1px solid #999999;
- 	padding: 20px;
- 	margin-bottom: 15px;
+ 	background: #fcffe0;
+ 
+ 	/*border: 1px solid #999999;*/
+ 	 /*Margen para separar el footer*/
 }
 
 article footer {
  	text-align: right;
+
 }
 
 #contenedor_1{
+	/*margin recorta y deja ver la caja de abajo*/
+	padding: 10px 20px;
+	display: flex;
+	direction: row;
 	width: auto;
-	margin: 20px 0px;
-	background: #219bd9;
+	background: #e5e8cc;/*azul claro #219bd9*/
+
 }
+
+
 #caja_1{
-	flex: 1 ;
+	flex: 30%;
+	padding: 5px 15px;
+	color:#4e5319 ;
+	margin-left: 3%;
+	/*margin: 0px 10px;*/
+
 }
 #caja_2{
-	flex: 1 ;
+	flex: 30%;
+	padding: 5px 5px;
+	color:#491463;
+	margin-left: 3%;
+
 }
 #caja_3{
-	flex: 1 ;
+	flex: 40%;
+	padding: 5px 5px;
+	color:#961731;
+	/*border: 1px solid #999999;
+    border-radius: 4px;
+    margin: 0px 10px;*/
+
+}
+
+#caja_mapa{
+	border: 1px solid #999999;
+    border-radius: 4px;
+    
+}
+#contenedor_2{
+	display: flex;
+	direction: row;
+	width: auto;
+	background: #fcffe0;
+	margin-bottom: 15px;
+}
+
+#caja_4{
+	flex: 1;
+	padding: 10px 20px;
+	/*margin: 0px 20px;*/
+}
+
+#caja_endo{
+	display: flex;
+	direction: row;
+	width: auto;
+	/*padding: 5px 5px;*/
+	border: 1px solid #999999;
+    border-radius: 4px;
+    background: #e5e8cc;
+	/*margin: 0px 10px;*/
+}
+
+#caja_cv{
+	/*padding: 5px 5px;*/
+	width: auto;
+    padding: 10px;
+    background: #fcffe0;
+	/*margin: 0px 10px;*/
+}
+#caja_7{
+	flex: 1 70% ;
+	padding: 5px 5px;
+	color: #333333;
+}
+#caja_8 {
+	flex: 1 30%;
+	text-align: right;
+	margin: 10px 10px;
+}
+
+#caja_8 img{
+
+	
+}
+
+#caja_clinica{
+	display: flex;
+	direction: row;
+	padding: 5px 5px;
+	width: auto;
+    background: #fcffe0;
+	/*margin: 0px 10px;*/
+}
+#caja_9{
+	flex: 1 75% ;
+	padding: 5px 5px;
+
+}
+#caja_10{
+	flex: 1 25%;
+	padding: 5px 5px;
+
 }

@@ -1,12 +1,7 @@
 extends layout
 
 block header
-  #cabecera
-    h1.cabecera1(data-numlineas='1')   
-      if (opcion)
-        p #{opcion} es una gran especialidad
-      else 
-        p Especialidad no seleccionada
+  img(src='/images/Consulta_Montalban.jpg')
 
 
 block navegacion
@@ -15,33 +10,56 @@ block navegacion
       li 
         a(href='/') Inicio
       li 
-        a(href='') Nutrición Clínica
+        a(href='/endocrinologia') Endocrinología y diabetes
       li
-        a(href='/endocrinologia/general/') Endocrinología
-        #submenu
-          ul
-            li
-              a(href='/endocrinologia/preventiva') Preventiva
-            li 
-              a(href='/endocrinologia/especial') Especial
+        a(href='/nutricion') Nutrición y Obesidad
+      li
+        a(href='/clinica') Nuestra Clínica
         
 block section
   #seccion_principal
-    article autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina autor de libro sobre medicina endocrina
+    article 
+      #titulo_endo Nutrición Clínica 
+      #color_gris
+        p Nutrición clínica es la parte de la medicina encargada de proporcionar un tratamiento nutricional específico según las distintas patologías.
+      br 
 
-    article otro articulo sobre medicina endocrina
-
-
-    
-block aside
-  #barra_lateral
-          img(src='/images/cuadrado_2.jpg')
- 
-          img(src='/images/cuadrado_3.jpg')
- 
-          img(src='/images/cuadrado_4.jpg')
+      #caja_endo
+        #caja_7
+          #bullets
+            ul
+              li Trastornos de la conducta alimentaria: anorexia y bulimia. 
+              li Malnutrición en el anciano. 
+              li Trastornos nutricionales en enfermedades oncológicas. 
+              li Trastornos nutricionales en enfermedades neurológicas. 
+              li Abordaje de la disfagia orofaríngea. 
+              li Tratamiento nutricional en enfermedad renal, hepática y malabsorción.
    
+        #caja_8
+          img(src='/images/piramide_aliment_66.jpg')
+
+    article
+      br 
+      #titulo_endo Obesidad y Sobrepeso 
+      p 
+        #color_gris El sobrepeso y la obesidad se definen como una acumulación anormal o excesiva de grasa en el organismo que es perjudicial para la salud. La causa fundamental es una alteración del balance de energía entre las calorías consumidas y gastadas como resultado fundamental de una disminución de la actividad física. También muchas enfermedades y sus tratamientos están en el origen del aumento de peso patológico. Independientemente del mecanismo que conduzca a la obesidad supone un riesgo para el desarrollo de diversas enfermedades, tales como diabetes, artrosis, hipertensión arterial, dislipemias, enfermedades cardiovasculares, apnea del sueño, etc.
+      br
+
+      #caja_endo
+        #caja_7 
+          #bullets
+            ul
+              li Diagnóstico integral de obesidad. 
+              li Estudio composición corporal. 
+              li Tratamiento dietético personalizado. 
+              li Estudio y tratamiento de comorbilidades asociadas. 
+              li Enfoque terapéutico de la obesidad mórbida.
+              li Preparación y seguimiento tras cirugía de la obesidad: banda gástrica, balón intragástrico, gastrectomía tubular, by-pass gástrico, by-passbiliopancreático.
+              li Sobrepeso y obesidad en niños y adolescentes.
+   
+        #caja_8
+          img(src='/images/maquina_66.jpg')
 
 block footer
   #pie 
-    small Copyright ---
+    small Copyright 2014 Doctora Montalbán Carrasco
